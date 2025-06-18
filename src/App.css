@@ -568,6 +568,7 @@ contact us Page ends here
   .section-searchFilter{
     padding: 0 40px;
   }
+
 }
 
 @media screen and (max-width: 980px) {
@@ -673,3 +674,4 @@ a {
 .contact-wrapper button{
   display: inline;
 }
+

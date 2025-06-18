@@ -19,10 +19,10 @@ export const Headers = () => {
           </div>
           <nav className={show ? "menu-mobile" : "menu-web"}>
             <ul>
-              <li><NavLink to="/">Home</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <li><NavLink to="/country">Country</NavLink></li>
-              <li><NavLink to="contact">Contact</NavLink></li>
+              <li><NavLink to="/" onClick={() => setShow(false)}>Home</NavLink></li>
+              <li><NavLink to="/about" onClick={() => setShow(false)}>About</NavLink></li>
+              <li><NavLink to="/country" onClick={() => setShow(false)}>Country</NavLink></li>
+              <li><NavLink to="contact" onClick={() => setShow(false)}>Contact</NavLink></li>
             </ul>
           </nav>
         <div className="ham-menu">
