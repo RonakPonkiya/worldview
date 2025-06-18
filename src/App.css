@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: black;  
+  background-color: black;
 }
 
 h1,
@@ -109,7 +109,7 @@ header {
     height: 10rem;
   }
 }
-.Logo a{
+.Logo a {
   text-decoration: none;
 }
 
@@ -244,7 +244,7 @@ nav ul {
 .card {
   max-width: 55rem;
   border: 0;
-  width: 100%; 
+  width: 100%;
   margin-inline: auto;
 }
 
@@ -472,7 +472,6 @@ country Card
     border-radius: 1rem;
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
   }
-  
 
   & .select-section {
     background: linear-gradient(71deg, #080509, #1a171c, #080509);
@@ -506,7 +505,7 @@ country Card
   }
 }
 
-.asc button{
+.asc button {
   padding: 0.2rem 2rem;
 }
 ::placeholder {
@@ -563,12 +562,21 @@ contact us Page ends here
 @media screen and (max-width: 1320px) {
   .grid-four-cols {
     grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+  .section-searchFilter{
+    padding: 0 40px;
   }
 }
 
 @media screen and (max-width: 980px) {
   .grid-four-cols {
     grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+ 
+  .asc button {
+    margin-top: 0;
   }
 }
 
@@ -577,12 +585,48 @@ contact us Page ends here
   .grid-three-cols,
   .grid-two-cols {
     grid-template-columns: 1fr;
+    padding: 20px;
   }
 
   .grid--cols {
     grid-template-columns: 1fr;
   }
-}
+  .country-details-card .infoContainer {
+    gap: 0;
+  }
+  .country-details-card {
+    padding: 20px;
+    margin: 0;
+  }
+   .section-searchFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    
+  }
+  .btn-res{
+    display: flex;
+    gap: 30px;
+    padding: 1rem;
+  }
+  .section-about {
+    padding: 20px;
+  }
+  .section-contact{
+    padding: 20px;
+    margin: 0;
+  }
+  .section-searchFilter 
+    .select-section{
+      width: 200px;
+    }
+    .section-searchFilter 
+    input{
+      height: 32px;
+      border-radius: 50px;
+    }
+  }
 
 /* //Loader  */
 /* HTML: <div class="loader"></div> */
@@ -611,6 +655,6 @@ contact us Page ends here
   justify-content: center;
   align-items: center;
 }
-a{
+a {
   text-decoration: none;
 }

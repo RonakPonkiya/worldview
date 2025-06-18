@@ -1,6 +1,13 @@
 import React from "react";
 
-export const SearchFilter = ({ search, setSearch, filter, setFilter ,countries,setCountries }) => {
+export const SearchFilter = ({
+  search,
+  setSearch,
+  filter,
+  setFilter,
+  countries,
+  setCountries,
+}) => {
   const handleInputChange = (event) => {
     event.preventDefault();
     setSearch(event.target.value);
@@ -9,14 +16,14 @@ export const SearchFilter = ({ search, setSearch, filter, setFilter ,countries,s
     event.preventDefault();
     setFilter(event.target.value);
   };
-const sortCountries = (value) => {
-    const sortCountry =[...countries].sort((a,b) => {
-        return value === 'asc'
+  const sortCountries = (value) => {
+    const sortCountry = [...countries].sort((a, b) => {
+      return value === "asc"
         ? a.name.common.localeCompare(b.name.common)
         : b.name.common.localeCompare(a.name.common);
     });
-    setCountries(sortCountry)
-}
+    setCountries(sortCountry);
+  };
 
   return (
     <section className=" section-searchFilter container">
@@ -26,15 +33,15 @@ const sortCountries = (value) => {
         value={search}
         onChange={handleInputChange}
       />
+      <div className="btn-res">
+        <div className="asc">
+          <button onClick={() => sortCountries("asc")}>Asc</button>
+        </div>
 
-      <div className="asc">
-        <button onClick={() => sortCountries("asc")}>Asc</button>
+        <div className="asc">
+          <button onClick={() => sortCountries("des")}>Des</button>
+        </div>
       </div>
-
-      <div className="asc">
-        <button onClick={() => sortCountries("des")}>Desc</button>
-      </div>
-
       <div>
         <select
           className="select-section"
