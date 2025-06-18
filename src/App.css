@@ -626,6 +626,17 @@ contact us Page ends here
       height: 32px;
       border-radius: 50px;
     }
+    .footer-menu 
+    ul{
+      display: flex;
+      justify-content: center;
+    }
+    .copyright-text{
+      text-align: center;
+    }
+    .copyright-area{
+      padding: 0;
+    }
   }
 
 /* //Loader  */
