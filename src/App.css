@@ -669,3 +669,6 @@ contact us Page ends here
 a {
   text-decoration: none;
 }
+.contact-wrapper button{
+  display: inline;
+}
