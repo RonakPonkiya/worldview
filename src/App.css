@@ -208,9 +208,14 @@ nav ul {
   }
 
   .container .banner-image {
-    width: 80%;
+    width: 109%;
     order: 0;
   }
+}
+@media screen and (max-width: 426px){
+.hero-section .container{
+  margin: 0;
+}
 }
 
 /* About Section  */
